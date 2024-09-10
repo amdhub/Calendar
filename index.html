@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Reading Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calendar-container">
+        <h1>Bible Reading Calendar</h1>
+        <div class="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div id="calendar"></div>
+        <div id="reading-output">
+            <h2>Reading for <span id="selected-date">Today</span>:</h2>
+            <p id="bible-reading">Select a date to see the reading.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-container {
+    width: 320px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #4e49b4;
+}
+
+#month-year {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.calendar-day {
+    width: 30px;
+    height: 30px;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.calendar-day:hover {
+    background-color: #ddd;
+}
+
+.selected {
+    background-color: #6c63ff;
+    color: white;
+}
+
+.empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+#reading-output {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#reading-output h2 {
+    font-size: 18px;
+}
+
+#reading-output p {
+    font-size: 16px;
+}
